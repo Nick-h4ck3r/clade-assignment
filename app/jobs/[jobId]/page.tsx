@@ -2,6 +2,7 @@ import React from "react";
 import JobTabs from "@/components/JobTabs";
 import JobTitle from "@/components/JobTitle";
 import JobDetails from "@/components/JobDetails";
+import JobAbout from "@/components/JobAbout";
 
 type Props = {};
 
@@ -16,6 +17,7 @@ const JobPage = (props: Props) => {
         <div className="flex flex-col bg-white w-3/4 border-r py-4">
           <JobTitle />
           <JobDetails />
+          <JobAbout />
         </div>
 
         <div className="flex flex-col bg-white w-1/4 px-4 py-4">qwe</div>
