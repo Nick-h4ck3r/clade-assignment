@@ -8,7 +8,7 @@ const JobTabs = (props: Props) => {
   const [tab, setTab] = React.useState("jobPreview");
 
   return (
-    <div className="flex px-16 *:py-4 *:cursor-pointer *:border-b-2 *:duration-300 gap-20 text-sm">
+    <div className="flex px-16 *:py-4 *:cursor-pointer *:border-b-2 *:duration-300 gap-20 text-sm overflow-y-scroll md:overflow-hidden">
       <div
         onClick={() => setTab("jobPreview")}
         className={`${

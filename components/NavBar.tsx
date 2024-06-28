@@ -1,4 +1,13 @@
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
   BellIcon,
   BriefcaseIcon,
   ChevronDownIcon,
@@ -6,30 +15,19 @@ import {
   MessageSquareIcon,
 } from "lucide-react";
 import Link from "next/link";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 type Props = {};
 
 const NavBar = (props: Props) => {
   return (
     <div className="">
-      <div className="flex justify-between items-center bg-white px-10 py-4 mx-auto">
-        <div className="bg-gray-200 px-5 py-3 font-semibold text-orange-600">
+      <div className="flex flex-col md:flex-row justify-between items-center bg-white px-10 py-4 mx-auto gap-6 md:gap-0">
+        <Link
+          href={"/"}
+          className="bg-gray-200 px-5 py-3 font-semibold text-orange-600"
+        >
           Logo
-        </div>
+        </Link>
 
         <div
           className={`flex p-2 border border-gray-200 rounded-full gap-6 *:py-2 *:px-3 *:rounded-full *:flex *:items-center *:gap-2 cursor-pointer`}
@@ -62,7 +60,10 @@ const NavBar = (props: Props) => {
                   <ChevronDownIcon className="size-5" />
                 </div>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuContent
+                align="end"
+                className="w-56"
+              >
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>
