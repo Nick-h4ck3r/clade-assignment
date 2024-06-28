@@ -4,6 +4,7 @@ import JobTitle from "@/components/JobTitle";
 import JobDetails from "@/components/JobDetails";
 import JobAbout from "@/components/JobAbout";
 import CompanyDetails from "@/components/CompanyDetails";
+import JobSidebar from "@/components/JobSidebar";
 
 type Props = {};
 
@@ -14,7 +15,7 @@ const JobPage = (props: Props) => {
         <JobTabs />
       </div>
 
-      <div className="flex px-16 text-sm">
+      <div className="flex pl-16 text-sm">
         <div className="flex flex-col bg-white w-3/4 border-r py-4">
           <JobTitle />
           <JobDetails />
@@ -22,7 +23,9 @@ const JobPage = (props: Props) => {
           <CompanyDetails />
         </div>
 
-        <div className="flex flex-col bg-white w-1/4 px-4 py-4">qwe</div>
+        <div className="flex flex-col bg-white w-1/4 px-5 py-6">
+          <JobSidebar />
+        </div>
       </div>
     </>
   );
