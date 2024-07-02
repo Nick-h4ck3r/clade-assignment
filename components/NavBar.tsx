@@ -14,6 +14,7 @@ import {
   HandCoinsIcon,
   MessageSquareIcon,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {};
@@ -24,7 +25,7 @@ const NavBar = (props: Props) => {
       <div className="flex flex-col md:flex-row justify-between items-center bg-white px-10 py-4 mx-auto gap-6 md:gap-0">
         <Link
           href={"/"}
-          className="bg-gray-200 px-5 py-3 font-semibold text-orange-600"
+          className="bg-[#E7E7E7] px-5 py-3 font-semibold text-xl text-accentPrimary"
         >
           Logo
         </Link>
@@ -34,28 +35,33 @@ const NavBar = (props: Props) => {
         >
           <Link
             href={"/jobs"}
-            className="bg-orange-600 text-white border-2 border-orange-300"
+            className="bg-accentPrimary text-white border-2 border-orange-300"
           >
-            <BriefcaseIcon className="size-5" /> <span>Jobs</span>
+            <BriefcaseIcon className="size-5" />{" "}
+            <span className="text-xl font-medium">Jobs</span>
           </Link>
-          <div className="text-gray-400">
-            <MessageSquareIcon className="size-5" /> <span>Messages</span>
+          <div className="text-[#B0B0B0]">
+            <MessageSquareIcon className="size-5" />{" "}
+            <span className="text-xl font-medium">Messages</span>
           </div>
-          <div className="text-gray-400">
-            <HandCoinsIcon className="size-5" /> <span>Payments</span>
+          <div className="text-[#B0B0B0]">
+            <HandCoinsIcon className="size-5" />{" "}
+            <span className="text-xl font-medium">Payments</span>
           </div>
         </div>
 
-        <div className="flex gap-5 items-center">
-          <BellIcon />
+        <div className="flex gap-4 items-center">
+          <BellIcon className="size-8" />
           <div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 duration-300 rounded-3xl p-2">
-                  <img
-                    className="size-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt="Profile"
+                  <Image
+                    src={"/atlassian.png"}
+                    height={40}
+                    width={40}
+                    className="rounded-full"
+                    alt=""
                   />
                   <ChevronDownIcon className="size-5" />
                 </div>

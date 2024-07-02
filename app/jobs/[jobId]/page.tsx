@@ -15,7 +15,7 @@ const JobPage = (props: Props) => {
         <JobTabs />
       </div>
 
-      <div className="flex md:flex-row flex-col pl-8 md:pl-16 text-sm">
+      <div className="flex lg:flex-row flex-col pl-8 md:pl-16 text-sm">
         <div className="flex flex-col bg-white lg:w-3/4 md:border-r py-4">
           <JobTitle />
           <JobDetails />
@@ -23,7 +23,7 @@ const JobPage = (props: Props) => {
           <CompanyDetails />
         </div>
 
-        <div className="flex-col hidden lg:flex bg-white w-1/4 px-5 py-6">
+        <div className="flex-col flex bg-white lg:w-1/4 px-5 py-6">
           <JobSidebar />
         </div>
       </div>

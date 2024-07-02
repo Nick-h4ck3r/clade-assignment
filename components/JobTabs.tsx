@@ -8,13 +8,13 @@ const JobTabs = (props: Props) => {
   const [tab, setTab] = React.useState("jobPreview");
 
   return (
-    <div className="flex px-16 *:py-4 *:cursor-pointer *:border-b-2 *:duration-300 gap-20 text-sm overflow-y-scroll md:overflow-hidden">
+    <div className="flex px-16 *:py-4 *:cursor-pointer *:border-b-2 *:duration-300 gap-20 text-xl overflow-y-scroll md:overflow-hidden font-medium">
       <div
         onClick={() => setTab("jobPreview")}
         className={`${
           tab == "jobPreview"
-            ? "border-orange-600 text-orange-600 font-semibold"
-            : "border-transparent text-gray-400"
+            ? "border-accentPrimary text-accentPrimary font-semibold"
+            : "border-transparent text-mutedText"
         }`}
       >
         Job Preview
@@ -23,8 +23,8 @@ const JobTabs = (props: Props) => {
         onClick={() => setTab("applicants")}
         className={`${
           tab == "applicants"
-            ? "border-orange-600 text-orange-600 font-semibold"
-            : "border-transparent text-gray-400"
+            ? "border-accentPrimary text-accentPrimary font-semibold"
+            : "border-transparent text-mutedText"
         }`}
       >
         Applicants
@@ -33,8 +33,8 @@ const JobTabs = (props: Props) => {
         onClick={() => setTab("match")}
         className={`${
           tab == "match"
-            ? "border-orange-600 text-orange-600 font-semibold"
-            : "border-transparent text-gray-400"
+            ? "border-accentPrimary text-accentPrimary font-semibold"
+            : "border-transparent text-mutedText"
         }`}
       >
         Match
@@ -43,8 +43,8 @@ const JobTabs = (props: Props) => {
         onClick={() => setTab("messages")}
         className={`${
           tab == "messages"
-            ? "border-orange-600 text-orange-600 font-semibold"
-            : "border-transparent text-gray-400"
+            ? "border-accentPrimary text-accentPrimary font-semibold"
+            : "border-transparent text-mutedText"
         }`}
       >
         Messages

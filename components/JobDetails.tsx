@@ -1,37 +1,47 @@
-import React from "react";
+import SkillLogo from "./SkillLogo";
+import SmHeading from "./SmHeading";
 
 type Props = {};
 
 const JobDetails = (props: Props) => {
   return (
     <div className="border-b-2">
-      <div className="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-4 py-6 w-fit *:border-gray-300 *:text-sm *:pr-10 *:flex *:flex-col *:gap-3">
+      <div className="grid grid-cols-1 gap-6 md:gap-0 md:grid-cols-4 py-6 w-fit *:border-gray-300 *:text-sm *:pr-10 *:flex *:flex-col *:gap-2">
         <div>
-          <p className="text-xs font-medium text-gray-600">Skills Required</p>
+          <SmHeading heading="Skills Required" />
+
           <div className="flex flex-col gap-2">
-            <p className="text-xs border w-fit p-1.5 rounded-md">Figma</p>
-            <p className="text-xs border w-fit p-1.5 rounded-md">
-              Adobe Illustrator
-            </p>
-            <p className="text-xs border w-fit p-1.5 rounded-md">Adobe XD</p>
+            <SkillLogo
+              name="Figma"
+              logo="/figma.png"
+            />
+            <SkillLogo
+              name="Adobe Illustrator"
+              logo="/ai.png"
+            />
+            <SkillLogo
+              name="Adobe XD"
+              logo="/xd.png"
+            />
           </div>
         </div>
 
         <div>
-          <p className="text-xs font-medium text-gray-600">
-            Preferred Language
-          </p>
-          <p className="font-bold text-base">English</p>
+          <SmHeading heading="Preferred Language" />
+
+          <p className="font-semibold text-base">English</p>
         </div>
+
         <div>
-          <p className="text-xs font-medium text-gray-600">Type</p>
-          <p className="font-bold text-base">Full-time</p>
+          <SmHeading heading="Type" />
+
+          <p className="font-semibold text-base">Full-time</p>
         </div>
+
         <div>
-          <p className="text-xs font-medium text-gray-600">
-            Years of Experience
-          </p>
-          <p className="font-bold text-base">3+ Years of Experience</p>
+          <SmHeading heading="Years of Experience" />
+
+          <p className="font-semibold text-base">3+ Years of Experience</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SmHeading from "./SmHeading";
 
 type Props = {};
 
@@ -14,43 +15,49 @@ const CompanyDetails = (props: Props) => {
           width={40}
           height={40}
         />
-        <p className="text-lg font-medium">Atlassian</p>
+        <p className="text-xl font-medium text-quaternaryText">Atlassian</p>
       </div>
 
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-5 *:gap-2">
           <div className="flex flex-col">
-            <p className="text-xs font-medium text-gray-600">Company size</p>
-            <p className="font-medium">1k - 2k Employees</p>
+            <SmHeading heading="Company Size" />
+            <p className="font-medium text-base text-primaryText">
+              1k - 2k Employees
+            </p>
           </div>
 
           <div className="flex flex-col">
-            <p className="text-xs font-medium text-gray-600">Sector</p>
-            <p className="font-medium">
+            <SmHeading heading="Sector" />
+            <p className="font-medium text-base text-primaryText">
               Information Technology, Infrastructure
             </p>
           </div>
 
           <div className="flex flex-col">
-            <p className="text-xs font-medium text-gray-600">Founded In</p>
-            <p className="font-medium">2019</p>
+            <SmHeading heading="Founded in" />
+            <p className="font-medium text-base text-primaryText">2019</p>
           </div>
         </div>
 
         <div className="flex flex-col gap-5 *:gap-2">
           <div className="flex flex-col">
-            <p className="text-xs font-medium text-gray-600">Type</p>
-            <p className="font-medium">Private</p>
+            <SmHeading heading="Type" />
+            <p className="font-medium text-base text-primaryText">Private</p>
           </div>
 
           <div className="flex flex-col">
-            <p className="text-xs font-medium text-gray-600">Funding</p>
-            <p className="font-medium">Bootstrapped</p>
+            <SmHeading heading="Funding" />
+            <p className="font-medium text-base text-primaryText">
+              Bootstrapped
+            </p>
           </div>
 
           <div className="flex flex-col">
-            <p className="text-xs font-medium text-gray-600">Founded By</p>
-            <p className="font-medium">Scott Farquhar, Mike Cannon-Brookes</p>
+            <SmHeading heading="Founded by" />
+            <p className="font-medium text-base text-primaryText">
+              Scott Farquhar, Mike Cannon-Brookes
+            </p>
           </div>
         </div>
       </div>
