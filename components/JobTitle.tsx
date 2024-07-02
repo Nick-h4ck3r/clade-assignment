@@ -21,7 +21,7 @@ const JobTitle = (props: Props) => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4 text-xl font-medium text-tertiaryText *:flex *:items-center *:gap-1.5">
+      <div className="flex flex-col md:flex-row gap-4 text-lg font-medium text-tertiaryText *:flex *:items-center *:gap-1.5">
         <div>
           <svg
             width="24"

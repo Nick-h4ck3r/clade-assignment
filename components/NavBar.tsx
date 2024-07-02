@@ -25,7 +25,7 @@ const NavBar = (props: Props) => {
       <div className="flex flex-col md:flex-row justify-between items-center bg-white px-10 py-4 mx-auto gap-6 md:gap-0">
         <Link
           href={"/"}
-          className="bg-[#E7E7E7] px-5 py-3 font-semibold text-xl text-accentPrimary"
+          className="bg-[#E7E7E7] px-4 py-2 font-semibold text-lg text-accentPrimary"
         >
           Logo
         </Link>
@@ -38,15 +38,15 @@ const NavBar = (props: Props) => {
             className="bg-accentPrimary text-white border-2 border-orange-300"
           >
             <BriefcaseIcon className="size-5" />{" "}
-            <span className="text-xl font-medium">Jobs</span>
+            <span className="text-lg font-normal">Jobs</span>
           </Link>
           <div className="text-[#B0B0B0]">
             <MessageSquareIcon className="size-5" />{" "}
-            <span className="text-xl font-medium">Messages</span>
+            <span className="text-lg font-normal">Messages</span>
           </div>
           <div className="text-[#B0B0B0]">
             <HandCoinsIcon className="size-5" />{" "}
-            <span className="text-xl font-medium">Payments</span>
+            <span className="text-lg font-normal">Payments</span>
           </div>
         </div>
 
